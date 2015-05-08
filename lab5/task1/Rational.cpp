@@ -104,6 +104,11 @@ CRational const CRational::operator -() const
 
 //////////////////////////////////////////////////////////////////////////
 // TODO: 8. Реализовать оператор /
+CRational const CRational::operator / (CRational const &rational2) const
+{
+	 return (m_numerator * rational2.m_denominator
+		 , m_denominator * rational2.m_numerator);
+}
 //////////////////////////////////////////////////////////////////////////
 
 
